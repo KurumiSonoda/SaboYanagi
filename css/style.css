@@ -1,0 +1,464 @@
+@charset "UTF-8";
+
+/* 共通部分
+    --背景色 #F0E9E4
+    --文字色 #291515
+    --ヘッダー、フッダー #93945E
+---------------------------------------------------- */
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "A-OTF リュウミン Pr6N L-KL", "a-otf-ryumin-pr6n", serif;
+    line-height: 1.7;
+    color: #291515;
+    background-color: #F0E9E4;
+    overflow-x: hidden;
+}
+
+header {
+    height: 66px;
+    background-color: #93945E;
+}
+
+a {
+    text-decoration: none;
+    color: #291515;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 230px;
+    color: #291515;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex .main-nav {
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 36px;
+}
+
+header .flex{
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding:10px 4%;
+}
+
+footer {
+    height: 200x;
+    background-color: #93945E;
+}
+
+.footer-logo {
+    width: fit-content;
+}
+
+.footer_container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 32px 4% 0 4%;
+}
+
+.footer_container .flex{
+    justify-content: center;
+    margin-bottom: 32px
+}
+
+.address {
+    width: 18em;
+    margin-right: 4em;
+}
+
+.hour {
+    width: 18em;
+    margin-left: 4em;
+}
+
+.address p, .hour p {
+    text-align: left;
+}
+
+.footer_container .sap {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.instagram {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.current {
+    text-decoration: underline;
+    text-decoration-color: #291515;
+}
+
+/* ページ上部へ戻る */
+.pagetop {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    background: rgba(255, 255, 255, 0);
+    border: solid 2px #6f4a2a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.pagetop__arrow {
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid #6f4a2a;
+    border-right: 3px solid #6f4a2a;
+    transform: translateY(20%) rotate(-45deg);
+}
+
+/* トップページ
+---------------------------------------------------- */
+.top {
+    background-image: url(../img/top.png);
+    background-size: cover;
+    background-position: center top;
+    height: 1000px;
+    position: relative;
+}
+
+.top .wrapper {
+    background-color: rgba(0, 0, 0, 0.4);
+    color:#fff;
+    position: absolute;
+    top: 42%;
+    left: 0%;
+    padding: 20px 4%;
+}
+
+.top .wrapper p {
+    text-align: left;
+    line-height: 1.7rem;
+}
+
+.top .wrapper .catchcopy {
+    font-size: 3rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+    margin: 10px auto;
+    line-height: 1.2em;
+}
+
+.concept {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 550px;
+    padding: 250px auto;
+}
+
+.concept h2, .concept p {
+    width: fit-content;
+    text-align: center;
+    line-height: 4rem;
+    margin-top: 0px;
+    margin: 0 auto;
+}
+
+.about {
+    background-image: url(../img/about.png);
+    background-size: cover;
+    height: 773px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.about .wrapper {
+    margin-top: 350px;
+}
+
+.about_yamecha {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.about .wrapper p {
+    text-align: left;
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+
+.top-menu {
+    margin-top: 58px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-menu .flex {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+
+h3 {
+    height: 34px;
+}
+
+.border {
+    width: 18rem;
+    border-bottom: 3px solid #291515;
+}
+
+.top-menu .item {
+    width: 100%;
+}
+
+.top-drink {
+    margin-top: 54px;
+    margin-left: 75px;
+    line-height: 2.5;
+}
+
+.top-food {
+    margin-top: 54px;
+    margin-right: 75px;
+    line-height: 2.5;
+}
+
+.drinkTable, .foodTable {
+    border-collapse: separate;
+    border-spacing: 20px 0px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.top-menu a {
+    text-align: right;
+    margin-left: 10rem;
+}
+
+.arrow {
+    width: 8rem;
+    height: 0.5rem;
+    border-bottom: 2px solid #291515;
+    border-right: 2px solid #291515;
+    transform: skew(45deg);
+    margin: -12px 0px 0px 8rem;
+}
+
+.info-img {
+    background-image: url(../img/info.png);
+    background-size: 100% auto;
+    height: calc(360 / 1280 * 100vw);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news {
+    margin-top: 90px;
+    margin-bottom: 260px;
+}
+
+.news ul{
+    width: fit-content;
+    margin: 20px auto 100px auto;
+    line-height: 4rem;
+}
+
+time {
+    margin-right: 4rem;
+}
+
+iframe {
+    height: 550px;
+    width: 100%;
+    -webkit-filter: hue-rotate(180deg);
+    filter: shue-rotate(180deg);
+}
+
+.access {
+    margin-bottom: 60px;
+}
+
+.access-address, .access-car, .access-train {
+    width: 40rem;
+    margin: 2.8125rem auto;
+    border-bottom: 1px solid rgba(111, 74, 42, 0.5);
+    padding: 0px 0px 2.8125em 1em ;
+}
+
+.access-train {
+    border-style: none;
+}
+
+.access h2 {
+    margin-top: 30px;
+}
+
+.access p {
+    text-align: left;
+}
+
+
+/* お品書き
+---------------------------------------------------- */
+#menu {
+    margin-bottom: 9.6875rem;
+}
+
+.menu-img {
+    background-image: url(../img/menu.png);
+    background-size: cover;
+    background-position: center top;
+    height: 1000px;
+    position: relative;
+}
+
+.menu-img .wrapper {
+    height: 680px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-img .wrapper p {
+    font-size: 1.5rem;
+    line-height: 4rem;
+    margin: 8em auto 0 50%;
+}
+
+.menu-img .wrapper .catchcopy {
+    font-size: 3rem;
+    border-style: none;
+    margin-left: 17.1875rem;
+    margin-top: 20rem;
+}
+
+#drink, #food {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.menu-drink, .menu-food {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.75rem;
+}
+
+.caption {
+    width: 28rem;
+    text-align: left;
+    margin-left: 4.6875rem;
+}
+
+.caption h3 {
+    display: flex;
+    font-size: 1rem;
+    height: 1.5rem;
+}
+
+.name {
+    width: 10rem;
+}
+
+.price {
+    margin-left: 2.5rem;
+}
+
+.caption p {
+    margin-bottom: 2.5rem;
+    font-size: 0.875em;
+    line-height: 1.2rem;
+}
+
+/* お問合わせ
+---------------------------------------------------- */
+#contact {
+    height: 874px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact h2 {
+    margin-top: 0px;
+}
+
+form {
+    margin-top: 5.625em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+input[type="text"],
+input[type="email"],
+#inquiry {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #e1ded1;
+    border-radius: 20px;
+    margin-left: 5.625em;
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+}
+
+#inquiry {
+    height: 10rem;
+}
+
+input[type="submit"] {
+    width: 10rem;
+    border-radius: 20px;
+    background-color: #6f4a2a;
+    color: #fff;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-title {
+    width: 12rem;
+}
+
+/* 751px以上の時は非表示 */
+@media screen and (min-width: 751px) {
+    .sp-menu {
+      display: none;
+    }
+}
